@@ -3,8 +3,8 @@ title: "Module 2 - R Markdown Document 1"
 author: "JKT"
 date: "2026-02-06"
 output:
-  html_document: default
   word_document: default
+  html_document: default
   pdf_document: default
 ---
 
@@ -102,6 +102,31 @@ Here is an example of code in a blockquote:
 knitr::kable(head(cars),
              caption = "Top 6 Rows of Cars Dataset")
 ```
+
+## Inset an equation
+
+$$ Y = \beta_0 + \beta_1x $$
+
+```{r}
+head(iris)
+```
+
+```{r}
+#install.packages("printr")
+library(printr)
+head(iris)
+```
+
+## Insert an image
+Here is an image inserted
+
+![Sunstar](Sunstar/sunstar.png)
+
+
+## Insert a foot note
+
+Here is a footnote^[This is an inline footnote which is easier since you don't have to remember going to edit the end of the document]
+
 
 
 
